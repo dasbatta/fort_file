@@ -1,0 +1,6 @@
+{
+  "sdkms_endpoint": "https://amer.smartkey.io/",
+  "api_key": "YTJlMWI1NmUtMzZhMy00ZmM1LTg2MjMtOTU1YzdlMzZlNjUyOjRJd0ZHU1Z6VlNWSXlOM2RQM3JiODl6aTNNODAyWm5RY3JNWjM5ell4cjFRYm1VSWU5eHVMZFJRWURHZ2tpNTl1UXJ4QTRvQTFTS25saHVweWNaX0dR",
+  "key_name": "triara-adm-ssc-secobj",
+  "socket_file": "/var/run/kms-plugin/socket"
+}

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-sdkms-plugin
+##  namespace: fortanix
+spec:
+  containers:
+  - name: k8s-sdkms-plugin
+    image: fortanix/k8s-sdkms-plugin:0.1.0
+    volumeMounts:
+    - name: socket-dir
+      mountPath: /var/run/kms-plugin
+    - name: config
+      mountPath: /etc/fortanix/k8s-sdkms-plugin.json
+  volumes:
+  - name: socket-dir
+    hostPath:
+      path: /var/run/kms-plugin
+      type: DirectoryOrCreate
+  - name: config
+    hostPath:
+      path: /etc/fortanix/k8s-sdkms-plugin.json
+      type: File
